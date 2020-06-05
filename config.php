@@ -1,9 +1,9 @@
 <?php
 
-$hostname = "localhost";        /* This is the hostname on which your MySQL is running */
-$dbName = "cactus_costing";
-$dbusername = "cactus_dev";
-$password = "CostingCactus9102";
+$hostname = "citmalumnes.upc.es";        /* This is the hostname on which your MySQL is running */
+$dbName = "annase";
+$dbusername = "annase";
+$password = "23927820tof";
 
 $connect_msg = "";
 
