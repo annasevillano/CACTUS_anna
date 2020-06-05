@@ -1,0 +1,429 @@
+html,
+body {
+  margin:0;
+  padding:0;
+  height:100%;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-weight: 300;
+  font-size: small;
+}
+#wrapper {
+  min-height:100%;
+  position:relative;
+}
+#header {
+  padding:10px;
+  text-align: center;
+  background:#006600;
+}
+#content {
+  padding:10px;
+  padding-bottom:50px;   /* Height of the footer element */
+}
+#footer {
+  width:100%;
+  height:50px;
+  text-align: center;
+  position:absolute;
+  bottom:0;
+  left:0;
+  background:#000000;
+  color: dimgray;
+}
+#footer a:link,
+#footer a:visited,
+#footer a:active {
+    color: dimgray;
+}
+#footer a:hover {
+    color: green;
+}
+.header {
+  color:beige;
+  font-size: 1.2em;
+  font-weight: bold;
+  }
+h1 {
+  font-size: 1.5em;
+  color: firebrick;
+}
+h1.intro {
+    font-size: 1.5em;
+    color: blue;
+}
+h2 {
+  font-size: 1.1em;
+  color: navy;
+}
+
+h3 {
+  font-size: 1.1em;
+  color: olivedrab;
+  /*text-align:right;*/
+}
+
+.h1size {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: black;
+}
+.h2size {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: black;
+}
+.h3size {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: black;
+}
+
+.h1a {
+    display: block;
+    font-size: 1.5em;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+    color: black;
+}
+
+#headline{
+    color: firebrick;
+}
+
+textarea.feedback {
+  height: 120px;
+  width: 30em;
+  border: 3px solid #cccccc;
+  padding: 5px;
+}
+
+/*
+.ui-page .ui-content .ui-input-text {
+    height : 155px;
+}​
+*/
+textarea.ui-input-textX {
+    height: inherit; !important
+    /*height: 120px;*/
+    background-color: #fafafa;
+    border: 3px solid #cccccc;
+    padding: 5px;
+}
+
+.tableGradeTop {
+  border-collapse: collapse;
+  background-color:#EEEEDD; 
+  border: 1px solid #CCC;
+  width: 50%;
+  min-width: 700px;
+  max-width: 900px;
+  font-size: 100%;
+}
+.tableGradeTop td{
+  padding: 5px;
+}
+
+.tableSection {
+  border-collapse: collapse;
+  background-color:#F6F6F6;
+  border: 1px solid #CCC;
+  width: 44%;
+  min-width: 200px;
+  max-width: 900px;
+  font-size: 100%;
+  margin: 0px;
+}
+.markerName {
+    color:darkslategrey;
+    font-size: 1.2em;
+    font-weight:bold;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.combinationAgreed {
+    color:darkslategrey;
+    font-size: 1.2em;
+    font-weight:bold;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.combinationHeader {
+    color:maroon;
+    font-size: 1.0em;
+    font-weight:bold;
+    padding-bottom: 15px;
+}
+.feedbackSection {
+  color:blue;
+  font-size: 1.2em;
+  font-weight:bold;
+  padding-bottom: 15px;
+}
+.feedbackQ {
+  color:grey;
+  /*font-size: 1.2em;*/
+}
+.feedbackQem {
+  color:darkslategrey;
+  font-style:italic;
+  font-weight:bold;
+}
+.feedbackSectionQ {
+  color:blue;
+  /*font-size: 1.5em;*/
+  font-weight:bold;
+  }
+.feedbackTotalMark{
+  color:red;
+  padding: 5px;
+  background: yellow;
+  border-style:solid;
+  border-color:black;
+  border-width:1px;
+}
+
+.options { 
+  padding-left: 35px;
+  padding-top: 5px;
+  border: 0px solid gray; 
+}
+
+
+.tableSimplePASA {
+  margin:0px;padding:0px;
+  width:100%;
+  border:1px solid #ffffff;
+}
+.tableSimple table{
+  border-collapse: collapse;
+  //border-spacing: 1;
+  border-width:1px;
+  border: 1px solid black;
+  width:100%;
+  height:100%;
+  //margin:0px;
+  //padding:0px;
+}
+
+.tableSimple tr:hover td{
+  background-color:#e5e5e5;
+}
+
+.tableSimple td{
+  vertical-align:middle;
+  //background-color:#ffffff;
+  border:1px solid black;
+  //border-width:0px 0px 0px 0px;
+  //text-align:left;
+  padding:5px;
+  //font-size:80%;
+  //font-family:Arial;
+  //font-weight:normal;
+  //color:#000000;
+}
+
+.tablehead { 
+  color:black;
+  font-weight:bold;
+  font-size: 1.2em;
+  background-color:#AED6FF;
+}
+
+/*
+gradeTop
+grade
+gradeFeedback
+feedbackSection
+tablehead
+feedbackQ
+feedbackQem
+feedbackTotalMark
+feedbackSectionMarkText
+feedbackSectionMarkText
+feedbackInstructions
+options
+
+.section
+*/
+
+/* The below are for the floating mark box */
+div#sticker {
+    position:fixed;
+    padding:5px;
+    margin:20px 0;
+    color:red;
+    background:yellow;
+    border-style:solid;
+    border-color:black;
+    border-width:1px;
+    width:90px;
+    right:10px;
+    font-size: 1.5em;
+    font-weight:bold;
+}
+div#sticker_mid {
+    position:fixed;
+    padding:5px;
+    margin:20px 0;
+    color:red;
+    background:yellow;
+    border-style:solid;
+    border-color:black;
+    border-width:1px;
+    width:90px;
+    right:50%;
+    font-size: 1.5em;
+    font-weight:bold;
+}
+
+/* The below are for the 3 floating mark boxes */
+div#sticker_1 {
+    position:fixed;
+    padding:5px;
+    margin:20px 0;
+    color:red;
+    background:yellow;
+    border-style:solid;
+    border-color:black;
+    border-width:1px;
+    width:90px;
+    right:70%;
+    font-size: 1.5em;
+    font-weight:bold;
+}
+div#sticker_2 {
+    position:fixed;
+    padding:5px;
+    margin:20px 0;
+    color:red;
+    background:yellow;
+    border-style:solid;
+    border-color:black;
+    border-width:1px;
+    width:90px;
+    right:35%;
+    font-size: 1.5em;
+    font-weight:bold;
+}
+div#sticker_3 {
+    position:fixed;
+    padding:5px;
+    margin:20px 0;
+    color:red;
+    background:yellow;
+    border-style:solid;
+    border-color:black;
+    border-width:1px;
+    width:90px;
+    right:5%;
+    font-size: 1.5em;
+    font-weight:bold;
+}
+
+
+div.simple {
+    text-align: left;
+    color: yellow;
+    border-width: 1pt;
+}
+div.simple-white {
+    text-align: left;
+    color: white;
+    border-width: 1pt;
+}
+P.simple {
+    text-align: left;
+    color: yellow;
+    border-width: 1pt;
+}
+P.simple-white {
+     text-align: left;
+     color: white;
+     border-width: 1pt;
+ }
+span.simple-white {
+    text-align: left;
+    color: white;
+    border-width: 1pt;
+}
+.stick {
+    position:fixed;
+    top:0px;
+}
+.container{
+    overflow:hidden;
+    width:100%;
+    border-style:solid;
+    border-color:black;
+    border-width:0px;
+}
+.cell{width:47%; float:right; border:1px solid lightgray; margin:1%;}
+#cell-left{
+    float:left;
+}
+#threeCompareWrapper { border: 2px solid lightgrey;overflow:hidden; }
+#col1 { width: 30%; float:left; background-color: grey; border: 1px solid darkslategray;}
+#col2 { width: 30%; float:left; background-color: lightgray; border: 1px solid darkslategray;}
+#col3 { width: 30%; float:left; background-color: grey; border: 1px solid darkslategray;}
+
+/* Three block to compare */
+#compareThreePanes{
+    width: 1530px;
+    border: 1px;
+}
+#leftPane{
+    width: 500px;
+    float: left;
+    background-color: green;
+}
+#rightPane{
+    width: 500px;
+    float: right;
+    background-color: blue;
+}
+#midPane{
+    width: 500px;
+    float: left;
+    padding: 10px;
+    background-color: red;
+}
+.footer_link a:link,
+.footer_link a:visited,
+.footer_link a:hover,
+.footer_link a:active {
+    color:lightslategray;
+}
+
+#grey_image {
+    opacity: 0.6;
+    filter: alpha(opacity=60); /* msie */
+}
+
+.required {
+    color: red;
+}
+.footnote-size {
+    font-size: 0.8em;
+}
+
+#marksummary td:nth-child(3),
+#marksummary th:nth-child(3)
+{
+    text-align : center;
+    //font-weight: bold;
+}
+#marksummary td:nth-child(4),
+#marksummary th:nth-child(4)
+{
+    text-align : center;
+//font-weight: bold;
+}
+#marksummary td:nth-child(5),
+#marksummary th:nth-child(5)
+{
+    text-align : center;
+//font-weight: bold;
+}

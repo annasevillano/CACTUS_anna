@@ -1,0 +1,278 @@
+body {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 80%;
+}
+
+h1 {
+        font-size: 1.5em;
+        color:brown;
+}
+
+h1.intro {color:blue;}
+
+h2 {
+        font-size: 1.3em;
+}
+
+h3 {
+        font-size: 1.2em;
+        color: olivedrab;
+        //text-align:right;
+}
+
+.urgent {
+        color:orange;
+}
+
+p.note {
+  color:grey;
+  font-size: 0.2em;
+}
+
+table {
+	font: 11px/24px Verdana, Arial, Helvetica, sans-serif;
+	border-collapse: collapse;
+	/*width: 320px;*/
+  border: 1px solid #CCC;
+	}
+
+th {
+	padding: 0 0.5em;
+	//text-align: left;
+	}
+
+tr.yellow td {
+	border-top: 1px solid #FB7A31;
+	border-bottom: 1px solid #FB7A31;
+	background: #FFC;
+	}
+
+td {
+	border-bottom: 1px solid #CCC;
+	border-right: 1px solid #CCC;
+	padding: 0 0.5em;
+	vertical-align:top;
+}
+
+#table_cell_green
+{
+background-color:lime;
+color:white;
+}
+
+#table_cell_yellow
+{
+background-color:yellow;
+color:white;
+}
+
+#table_cell_red
+{
+background-color:red;
+color:white;
+}
+
+#colcentre {
+	text-align: center;
+}
+
+td:first-child {
+	/*width: 190px;*/
+}
+
+td+td {
+	border-left: 1px solid #CCC;
+	text-align: left;
+}
+
+textarea.feedback {
+	height: 120px;
+	width: 30em;
+	border: 3px solid #cccccc;
+	padding: 5px;
+}
+
+.feedbackQ {
+  color:grey;
+  font-size: 1.2em;
+  }
+
+.feedbackQem {
+  color:darkslategrey;
+  font-style:italic;
+  font-weight:bold;
+}
+
+.feedbackSection {
+  color:blue;
+  font-size: 1.5em;
+  font-weight:bold;
+  padding-bottom: 15px;
+  }
+.feedbackSectionQ {
+  color:blue;
+  //font-size: 1.5em;
+  font-weight:bold;
+  }
+
+.feedbackSectionMarkText {
+  color:firebrick;
+  font-size: 1.5em;
+  font-weight:bold;
+  padding-bottom: 15px;
+  }
+
+.feedbackSectionMark {
+  color:red;
+  font-size: 1.5em;
+  font-weight:bold;
+  padding-bottom: 15px;
+  }
+
+.feedbackTotalMark{
+  color:red;
+  padding: 5px;
+  background: yellow;
+  border-style:solid;
+  border-color:black;
+  border-width:1px;
+  }
+.feedbackInstructions{
+  color:olive;
+  font-style:normal;
+  font-weight:bold;
+}
+.feedbackWeights{
+  color:brown;
+  font-weight:bold;
+  font-size: 1.3em;
+}
+
+.options { 
+	padding-left: 35px;
+	border: 0px solid gray; 
+}
+
+.grade { 
+  color:black;
+  font-weight:bold;
+  font-size: 1.5em;
+}
+
+.tablehead { 
+  color:black;
+  font-weight:bold;
+  font-size: 1.4em;
+  background-color:#AED6FF;
+}
+
+.tableSection {
+  background-color:#F6F6F6;
+}
+.size2{
+    font-size: 2em;
+}
+.red{
+  color:red;
+}
+.grey{
+  color:grey;
+}
+.blue{
+  color:blue;
+}
+
+.bold{
+  font-weight:bold;
+}
+
+.gradeFeedback {background-color:#E3E4FA; }
+.gradeTop {background-color:#EEEEDD; }
+
+.mark1{
+	display:none;
+}
+
+.mark2{
+	display:none;
+}
+.mark2a{
+	color:red;
+}
+
+.footnote-size{
+  color:darkslategrey;
+  font-size: 0.8em;
+  }
+
+#leftcolumn { width: 48%; border: 0px solid red; float: left}
+#rightcolumn { width: 48%; border: 0px solid red;float: right}
+/* .clear { clear: both;} */
+
+.proj_title {
+  color:orangered;
+  font-style:italic;
+  font-weight:bold;
+}
+/* stuff to put a footer on the index page */
+#container {
+   min-height:100%;
+   position:relative;
+   border: 1px solid red;
+}
+#header {
+   background:#04B404;
+   padding:10px;
+}
+#body {
+   padding:10px;
+   padding-bottom:60px;   /* Height of the footer */
+}
+#footer {
+   padding-left:10px;
+   position:absolute;
+   bottom:0;
+   width:100%;
+   height:60px;   /* Height of the footer */
+   background:#F3E2A9;
+}
+
+
+.container{overflow:hidden; width:100%;}
+.cell{width:47%; float:right; border:1px solid black; margin:1%;}
+#cell-left{float:left;}
+
+
+div#sticker {
+    position:fixed;
+    padding:5px;
+    margin:20px 0;
+    color:red;
+    background:yellow;
+    border-style:solid;
+    border-color:black;
+    border-width:1px;
+    width:90px;
+    right:10px;
+    font-size: 1.5em;
+    font-weight:bold;
+}
+div#sticker_mid {
+    position:fixed;
+    padding:5px;
+    margin:20px 0;
+    color:red;
+    background:yellow;
+    border-style:solid;
+    border-color:black;
+    border-width:1px;
+    width:90px;
+    right:50%;
+    font-size: 1.5em;
+    font-weight:bold;
+}
+.stick {
+    position:fixed;
+    top:0px;
+}
+
