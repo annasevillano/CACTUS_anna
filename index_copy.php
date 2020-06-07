@@ -31,48 +31,21 @@ $greeting_block = "<h2></h2>";
 <body class="d-flex flex-column h-100">
 <?php (@include_once("./$mobile_nav_bs")) OR die("Cannot find this file to include: $mobile_nav_bs<BR>"); ?>
 
-<div class="container-fluid">
+<div class="container">
     <!--
     <div class="jumbotron jumbotron-header">
         <h2><img src="<?php echo("./images/$header_image"); ?>" alt="Logo" width="320" height="87"/><br><?php echo("$group_title : $running_title"); ?></h2>
     </div>
     -->
-    <!-- SIDE MENU -->
-    <div class="row">
-
-    <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sedebar collapse" style>
-        <div class="sidebar-sticky pt-3">
-            <a class="nav-item nav-link" href="#">About</a>
-            <a class="nav-item nav-link" href="#">Data Protocol</a>
-            <a class="nav-item nav-link" href="#">Cost Data</a>
-        <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
-            <span>Data</span>
-        </h6>
-        <ul class="nav flex-column">
-            <a  href="./admin_index.php" class="nav-item nav-link" style="color: antiquewhite !important;">Admin</a>
-        </ul>
-        </div>
-    </nav>
-        
-    <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
-    <div class="chartsjs-size-monitor" style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;">
-            <div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0">
-            </div>
-        </div>
-    <div class="chartjs-size-monitor-shrink" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;">
-        <div style="position:absolute;width:200%;height:200%;left:0; top:0">
-        </div>
-    </div>
-
-    <!-- GRAPHS -->
     <hr class="style1">
     <div class="container-fluid">
         <?php echo("$greeting_block"); ?>
-    </div>
-    </hr>
+
+
+
     <div class="container-fluid">
         <div class="row">
-    <div class="col-xs-12 ">
+            <div class="col-xs-12 ">
                 <nav>
                     <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
                         <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Total annualised costs by component</a>
@@ -167,7 +140,52 @@ $greeting_block = "<h2></h2>";
                                 </table>
                                 </div>
                                 <hr width="50%">
+<!--
+                                <div class='row justify-content-center'>
+                                    <div style="margin-top: 5px">
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <label class="radio-inline">
+                                                <input type="radio" name="tac_radio_overall_more" checked value="TACH"> TACH
+                                            </label>
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <label class="radio-inline">
+                                                <input type="radio" name="tac_radio_overall_more" value="TACC"> TACC
+                                            </label>
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <label class="radio-inline">
+                                                <input type="radio" name="tac_radio_overall_more" value="TCH"> TCH
+                                            </label>
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <label class="radio-inline">
+                                                <input type="radio" name="tac_radio_overall_more" value="TCC"> TCC
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
 
+                                <div class='row justify-content-center'>
+                                    <div style="margin-top: 5px">
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <label class="radio-inline">
+                                                <input type="radio" name="overall_radio" checked value="BOTH"> CAPEX and OPEX
+                                            </label>
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <label class="radio-inline">
+                                                <input type="radio" name="overall_radio" value="CAPEX"> CAPEX
+                                            </label>
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <label class="radio-inline">
+                                                <input type="radio" name="overall_radio" value="OPEX"> OPEX
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+-->
                                 <div class='row'>
                                     <div id="overall_more_chart" style="min-width: 310px; max-width: 1200px; height: 900px;  margin: 0 auto; width: 100%; display: block">
                                     </div>
@@ -361,7 +379,49 @@ $greeting_block = "<h2></h2>";
                                     </table>
                                 </div>
                                 <hr width="50%">
+<!--
+                                <div class='row justify-content-center'>
+                                    <div style="margin-top: 5px">
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <label class="radio-inline">
+                                                <input type="radio" name="tac_radio_category_split" checked value="TACH"> TACH
+                                            </label>
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <label class="radio-inline">
+                                                <input type="radio" name="tac_radio_category_split" value="TACC"> TACC
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
 
+                                <div class='row justify-content-center'>
+                                    <div style="margin-top: 5px">
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <label class="radio-inline">
+                                                <input type="radio" name="capex_opex_radio" checked value="BOTH"> CAPEX and OPEX
+                                            </label>
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <label class="radio-inline">
+                                                <input type="radio" name="capex_opex_radio" value="CAPEX"> CAPEX
+                                            </label>
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <label class="radio-inline">
+                                                <input type="radio" name="capex_opex_radio" value="OPEX"> OPEX
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+-->
+                                <div class='row'>
+                                    <div id="category_split_chart" style="min-width: 310px; max-width: 1200px; height: 900px;  margin: 0 auto; width: 100%; display: block">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        &nbsp;
                         <!-- New Card -->
                         <div class="card">
                             <div class="card-header">
@@ -432,13 +492,58 @@ $greeting_block = "<h2></h2>";
                 </div> <!-- End of tab group -->
 
             </div>
-            </div>
-            </div>
         </div>
+        &nbsp;
 
-    <!-- END GRAPHS -->
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        <!-- New Card -->
+        <!--
+        <div class="card">
+            <div class="card-header">
+                <h3>9. Compare costs of santiation at two different locations</h3>
+            </div>
+            <div class="card-body">
+            <div class='row'>
+                <div class='col-sm-6'>
+                    <label for='datapoint1_select'>Select a Datapoint:</label>
+                    <select class='form-control' name='datapoint1_select' id='datapoint1_select'>
 
-    </main>
+                    </select>
+                </div>
+                <div class='col-sm-6'>
+                    <label for='datapoint2_select'>Select a Datapoint:</label>
+                    <select class='form-control' name='datapoint2_select' id='datapoint2_select'>
+
+                    </select>
+                </div>
+            </div>
+
+            <div class='row justify-content-center'>
+                <div style="margin-top: 8px">
+                    <div class="custom-control custom-radio custom-control-inline">
+                    <label class="radio-inline">
+                        <input type="radio" name="tac_radio_datapoint_split" checked value="TACH"> TACH
+                    </label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                    <label class="radio-inline">
+                        <input type="radio" name="tac_radio_datapoint_split" value="TACC"> TACC
+                    </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class='row'>
+                <div id="datapoint_split_chart" style="min-width: 310px; max-width: 1200px; height: 900px;  margin: 0 auto; width: 100%; display: block">
+                </div>
+            </div>
+
+        </div>
+        </div>
+        -->
+    </div>
 </div>
 
 
